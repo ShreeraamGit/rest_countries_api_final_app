@@ -4,7 +4,7 @@ import { Input } from "@chakra-ui/react";
 function SearchBar(props) {
   const { handler, captureHandler, message } = props;
   return (
-    <div className="text-white md:w-3/6 ">
+    <div className="text-white md:w-3/6 lg:text-xl">
       <Input
         className=""
         onKeyPress={handler}

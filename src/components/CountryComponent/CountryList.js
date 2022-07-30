@@ -8,7 +8,7 @@ function CountryList(props) {
   const { countries } = props;
 
   return (
-    <div className="min-h-screen mt-1 p-5 flex flex-col md:flex-row md:gap-5 space-y-10 md:space-y-0 flex-wrap text-white">
+    <div className="min-h-screen mt-1 p-5 lg:p-7 flex flex-col md:flex-row md:gap-5 lg:gap-6 space-y-10 md:space-y-0 flex-wrap text-white">
       {countries.map((items) => (
         <Link key={items.name.common} to={`${items.name.common}`}>
           <button key={items.name.common} className="text-left">

@@ -6,9 +6,9 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 function BackButton() {
   return (
-    <div className="backButton p-5 mt-8">
-      <button className="bg-[#2b3945] shadow-lg flex justify-center items-center w-[7.5rem] text-white rounded p-2 text-xl">
-        <span className="mr-2 text-xl">←</span> Back
+    <div className="backButton p-5 mt-8 lg:pl-24 lg:pr-24">
+      <button className="bg-[#2b3945] shadow-lg lg:text-2xl flex justify-center items-center w-[7.5rem] text-white rounded p-2 text-xl">
+        <span className="mr-2 text-xl lg:text-2xl">←</span> Back
       </button>
     </div>
   );
