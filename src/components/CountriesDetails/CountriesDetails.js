@@ -25,9 +25,9 @@ function CountriesDetail(props) {
         <Link to={"/"}>
           <BackButton></BackButton>
         </Link>
-        <div className="detailsContainer border p-0 mt-0 lg:text-xl text-white flex md:items-center lg:justify-between lg:items-center">
-          <div className="innerContainer border flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-0 lg:space-x-24 lg:items-center">
-            <div className="flagbox border h-[15rem] md:h-[24rem] md:w-2/4">
+        <div className="detailsContainer p-0 mt-0 lg:text-xl text-white flex md:items-center lg:justify-between lg:items-center">
+          <div className="innerContainer  flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-0 lg:space-x-24 lg:items-center">
+            <div className="flagbox h-[15rem] md:h-[24rem] md:w-2/4">
               <img
                 className="h-full md:h-full rounded-md"
                 src={selectedCountry.flags.png}
@@ -35,10 +35,10 @@ function CountriesDetail(props) {
               />
             </div>
             <div className="detailsBox space-y-3 md:w-2/4">
-              <h1 className="text-2xl font-extrabold">
+              <h1 className="text-2xl lg:text-4xl font-extrabold">
                 {selectedCountry.name.common}
               </h1>
-              <div className="firstLevel flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10">
+              <div className="firstLevel lg:text-2xl flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10">
                 <div className="firstLevelInner md:mt-0 flex flex-col space-y-2">
                   <h2 className="font-bold">
                     {" "}
@@ -103,7 +103,9 @@ function CountriesDetail(props) {
                 </div>
               </div>
               <div className="borderDetails flex flex-col space-y-5">
-                <h2 className="text-xl font-bold">Border Countries:</h2>
+                <h2 className="text-xl lg:text-3xl font-bold">
+                  Border Countries:
+                </h2>
                 <div className="listBorders flex flex-wrap gap-3">
                   {selectedCountry.borders ? (
                     selectedCountry.borders.map((items) => (
