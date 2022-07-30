@@ -25,7 +25,7 @@ function CountriesDetail(props) {
         <Link to={"/"}>
           <BackButton></BackButton>
         </Link>
-        <div className="detailsContainer p-0 mt-0 lg:text-xl text-white flex md:items-center lg:justify-between lg:items-center">
+        <div className="detailsContainer p-6 mt-0 lg:text-xl text-white flex md:items-center lg:justify-between lg:items-center">
           <div className="innerContainer  flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-0 lg:space-x-24 lg:items-center">
             <div className="flagbox h-[15rem] md:h-[24rem] md:w-2/4">
               <img
