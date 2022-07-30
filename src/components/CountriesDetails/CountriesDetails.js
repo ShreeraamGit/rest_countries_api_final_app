@@ -10,6 +10,7 @@ import { Outlet } from "react-router-dom";
 
 function CountriesDetail(props) {
   const { countries } = props;
+  console.log(countries);
 
   const { countryName } = useParams();
 
@@ -20,13 +21,13 @@ function CountriesDetail(props) {
   return (
     <main className="bg-[#202c37] min-h-screen min-w-screen font-['Nunito_Sans']">
       <NavBar></NavBar>
-      <div className="flex  border flex-col lg:flex-col md:justify-center md:content-center lg:justify-center">
+      <div className="md:pl-10 md:pr-10 md:space-y-16 flex flex-col lg:flex-col md:justify-center md:content-center lg:justify-center">
         <Link to={"/"}>
           <BackButton></BackButton>
         </Link>
-        <div className="detailsContainer lg:pl-24 lg:pr-24 p-6 mt-0 lg:text-xl text-white flex lg:justify-between lg:items-center">
-          <div className="innerContainer flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-24 lg:space-x-44 lg:items-center">
-            <div className="flagbox h-[15rem] md:h-[19rem] md:w-2/5">
+        <div className="detailsContainer border p-0 mt-0 lg:text-xl text-white flex md:items-center lg:justify-between lg:items-center">
+          <div className="innerContainer border flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-0 lg:space-x-24 lg:items-center">
+            <div className="flagbox border h-[15rem] md:h-[24rem] md:w-2/4">
               <img
                 className="h-full md:h-full rounded-md"
                 src={selectedCountry.flags.png}
