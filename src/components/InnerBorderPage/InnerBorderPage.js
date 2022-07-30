@@ -22,21 +22,21 @@ function InnerBorderPage(props) {
       <Link to={"/"}>
         <BackButton></BackButton>
       </Link>
-      <div className="detailsContainer p-6 mt-2 min-h-screen min-w-screen text-white">
-        <div className="innerContainer h-fit flex flex-col space-y-8">
-          <div className="flagbox h-[14rem]">
+      <div className="detailsContainer p-6 mt-0 text-white">
+        <div className="innerContainer flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-24">
+          <div className="flagbox h-[15rem] md:h-[19rem] md:w-2/5">
             <img
-              className="h-full rounded-md"
+              className="h-full md:h-full rounded-md"
               src={selectedCountry.flags.png}
               alt="new"
             />
           </div>
-          <div className="detailsBox space-y-7">
-            <div className="firstLevel space-y-8">
-              <h1 className="text-2xl font-extrabold">
-                {selectedCountry.name.common}
-              </h1>
-              <div className="firstLevelInner mt-7 flex flex-col space-y-2">
+          <div className="detailsBox space-y-3 md:w-2/4">
+            <h1 className="text-2xl font-extrabold">
+              {selectedCountry.name.common}
+            </h1>
+            <div className="firstLevel flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10">
+              <div className="firstLevelInner md:mt-0 flex flex-col space-y-2">
                 <h2 className="font-bold">
                   {" "}
                   Native Name:{" "}

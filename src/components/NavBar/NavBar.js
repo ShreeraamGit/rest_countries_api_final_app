@@ -14,8 +14,10 @@ function NavBar() {
   };
 
   return (
-    <div className="navbar border-2 border-none h-[6rem] bg-[#2b3945] rounded-b-md flex justify-between items-center p-4">
-      <div className="text-white text-lg font-bold">Where In World?</div>
+    <div className="navbar border-2 border-none h-[6rem] bg-[#2b3945] rounded-b-md flex justify-between items-center p-4 md:p-10">
+      <div className="text-white text-lg md:text-xl font-bold">
+        Where In World?
+      </div>
       <div className="flex space-x-2">
         <img
           className="h-7 w-7 md:h-8 md:w-8"
@@ -24,7 +26,7 @@ function NavBar() {
         />
         <button
           onClick={modeHandler}
-          className="text-white text-lg font-semi-bold"
+          className="text-white text-lg md:text-2xl font-semi-bold"
         >
           {mode ? "Dark Mode" : "Light Mode"}
         </button>

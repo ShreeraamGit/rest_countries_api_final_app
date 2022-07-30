@@ -8,22 +8,24 @@ function CountryList(props) {
   const { countries } = props;
 
   return (
-    <div className="min-h-screen mt-1 p-5 flex flex-col space-y-10 text-white">
+    <div className="min-h-screen mt-1 p-5 flex flex-col md:flex-row md:gap-5 space-y-10 md:space-y-0 flex-wrap text-white">
       {countries.map((items) => (
         <Link key={items.name.common} to={`${items.name.common}`}>
           <button key={items.name.common} className="text-left">
-            <div className="h-[31rem]">
-              <div className="h-2/4">
+            <div className="h-[31rem] md:h-[25rem] md:w-[19rem]">
+              <div className="h-2/4 md:w-full">
                 <img
-                  className="h-full rounded-t-md"
+                  className="h-full md:w-full rounded-t-md"
                   src={items.flags.png}
                   alt="new"
                 />
               </div>
               <div className="h-2/4 p-6 bg-[#2b3945] rounded-b-md">
                 <div className="">
-                  <h2 className="text-3xl font-bold">{items.name.common}</h2>
-                  <div className="mt-7 text-xl space-y-3 tracking-wide">
+                  <h2 className="text-3xl md:text-2xl font-bold">
+                    {items.name.common}
+                  </h2>
+                  <div className="mt-3 text-xl space-y-1 tracking-wide">
                     <h2 className="font-bold">
                       Population:{" "}
                       <span className="font-light">

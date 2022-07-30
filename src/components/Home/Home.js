@@ -48,15 +48,17 @@ function Home(props) {
   return (
     <main className="bg-[#202c37] min-h-screen min-w-screen font-['Nunito_Sans']">
       <NavBar></NavBar>
-      <SearchBar
-        handler={handleKeyDown}
-        captureHandler={captureValue}
-        message={message}
-      ></SearchBar>
-      <OptionsBar
-        categories={categories}
-        handlerFunction={filterButtonHandler}
-      ></OptionsBar>
+      <div className="p-5 md:p-10 flex flex-col md:flex-row space-y-5 md:space-y-0 md:justify-between">
+        <SearchBar
+          handler={handleKeyDown}
+          captureHandler={captureValue}
+          message={message}
+        ></SearchBar>
+        <OptionsBar
+          categories={categories}
+          handlerFunction={filterButtonHandler}
+        ></OptionsBar>
+      </div>
       <CountryList countries={items}></CountryList>
     </main>
   );

@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 function OptionsBar(props) {
   const { categories, handlerFunction } = props;
   return (
-    <div className="dropdown p-5 ">
+    <div className="dropdown">
       <label tabindex="0" className="btn m-1 bg-[#2b3945]">
         Filter By Region
       </label>
