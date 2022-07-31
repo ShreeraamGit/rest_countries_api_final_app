@@ -27,7 +27,7 @@ function CountriesDetail(props) {
         </Link>
         <div className="detailsContainer p-6 mt-0 lg:text-xl text-white flex md:items-center lg:justify-between lg:items-center">
           <div className="innerContainer  flex flex-col space-y-16 md:space-y-0 md:flex-row md:space-x-0 lg:space-x-24 lg:items-center">
-            <div className="flagbox h-[15rem] md:h-[19rem] lg:h-[19rem] xl:h-[22.5rem] md:w-2/5">
+            <div className="flagbox h-[15rem] md:h-[19rem] lg:h-[24rem] xl:h-[22.5rem] md:w-2/5">
               <img
                 className="h-full md:h-full rounded-md"
                 src={selectedCountry.flags.png}
@@ -82,9 +82,7 @@ function CountriesDetail(props) {
                   <h2 className="font-bold">
                     {" "}
                     Top Level:{" "}
-                    <span className="font-normal">
-                      {selectedCountry.capital}
-                    </span>
+                    <span className="font-normal">{selectedCountry.tld}</span>
                   </h2>
                   <h2 className="font-bold">
                     {" "}

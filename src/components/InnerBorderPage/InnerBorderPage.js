@@ -80,9 +80,7 @@ function InnerBorderPage(props) {
                   <h2 className="font-bold">
                     {" "}
                     Top Level:{" "}
-                    <span className="font-normal">
-                      {selectedCountry.capital}
-                    </span>
+                    <span className="font-normal">{selectedCountry.tld}</span>
                   </h2>
                   <h2 className="font-bold">
                     {" "}
